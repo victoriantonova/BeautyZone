@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyZone", "BeautyZone\BeautyZone.csproj", "{309DEBE7-F7E9-4888-93AC-08370A57121B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautyZone", "BeautyZone\BeautyZone.csproj", "{309DEBE7-F7E9-4888-93AC-08370A57121B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyZone.DAL", "BeautyZone.DAL\BeautyZone.DAL.csproj", "{A90B412F-02C6-484A-9DDD-302C15C33F03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautyZone.DAL", "BeautyZone.DAL\BeautyZone.DAL.csproj", "{A90B412F-02C6-484A-9DDD-302C15C33F03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyZone.SL", "BeautyZone.SL\BeautyZone.SL.csproj", "{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A90B412F-02C6-484A-9DDD-302C15C33F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A90B412F-02C6-484A-9DDD-302C15C33F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A90B412F-02C6-484A-9DDD-302C15C33F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
