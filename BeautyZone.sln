@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautyZone.DAL", "BeautyZone.DAL\BeautyZone.DAL.csproj", "{A90B412F-02C6-484A-9DDD-302C15C33F03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyZone.SL", "BeautyZone.SL\BeautyZone.SL.csproj", "{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautyZone.BLL", "BeautyZone.SL\BeautyZone.BLL.csproj", "{33B42D86-F855-45F7-91F6-2EC28EDAEFA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyZone.WEB", "BeautyZone.WEB\BeautyZone.WEB.csproj", "{9913F8CC-1681-42B7-A788-AE7C23F6101B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautyZone.WEB", "BeautyZone.WEB\BeautyZone.WEB.csproj", "{9913F8CC-1681-42B7-A788-AE7C23F6101B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

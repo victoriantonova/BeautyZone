@@ -1,39 +1,39 @@
 ﻿using BeautyZone.DAL.Interfaces;
+using BeautyZone.DAL.Model;
 using BeautyZone.DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BeautyZone.DAL
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private DatabaseContext db;
+        private readonly DatabaseContext db;
+        private readonly DbContextOptionsBuilder context;
 
-        private ApplicationUserRepository userRepository;
+        private UserRepository userRepository;
 
-        public UnitOfWork(DbContextOptions<DatabaseContext> options)
+        public UnitOfWork(DatabaseContext connectionString)
         {
-            db = new DatabaseContext(options);
+            db = connectionString;
+        }
+        public UnitOfWork(DbContextOptionsBuilder connectionString)
+        {
+            context = connectionString;
+        }
+
+        public IRepository<User> Users
+        {
+            get
+            {
+                if (userRepository == null)
+                    userRepository = new UserRepository(db);
+                return userRepository;
+            }
         }
 
         public void Save()
         {
             db.SaveChanges();
-        }
-
-        IApplicationUserRepository IUnitOfWork.ApplicationUsers
-        {
-            get
-            {
-                if (userRepository == null)
-                {
-                    userRepository = new ApplicationUserRepository(db);
-                }
-
-                return userRepository;
-            }
         }
     }
 }

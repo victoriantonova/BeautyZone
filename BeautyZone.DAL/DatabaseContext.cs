@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BeautyZone.DAL
 {
-    public class DatabaseContext : IdentityDbContext<ApplicationUser>
+    public class DatabaseContext : DbContext
     {
-        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        //public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        public DatabaseContext(DbContextOptions<DatabaseContext> options)
-                : base(options)
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
             Database.EnsureCreated();
         }
